@@ -1,0 +1,14 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w scss/style.scss -o dist/css/"
+  },
+  "author": "Ebru Özdemir",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

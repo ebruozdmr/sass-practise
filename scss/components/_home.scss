@@ -1,0 +1,33 @@
+@import "../variables/fonts", 
+        "../variables/colors", 
+        "../extends/extends",
+        "../mixins/mixins";
+
+/* Nested expressions are used. */
+.home {
+  @extend %flext-alignment;
+  height: 80vh;
+  &-container {
+    @extend %flext-alignment;
+    flex-direction: column;
+    &-header {
+      font-size: $largeFont;
+      padding: 10px;
+    }
+    &-text {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      font-size: $mediumFont;
+    }
+  }
+  @include mobile {
+    color: $colorTwo;
+  }
+  @include tablet {
+    color: $colorThree;
+  }
+  @include largeTablet {
+    color: $colorFour;
+  }
+}

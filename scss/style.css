@@ -1,0 +1,59 @@
+/* Main properties (font-size,colors,box-sizing..)  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  color: purple;
+}
+
+.home-container, .home {
+  display: flex;
+  align-items: center; /* y ekseninde hizalama */
+  justify-content: center; /* x ekseninde hizalama */
+}
+
+/* responsive design */
+/* Nested expressions are used. */
+.home {
+  height: 80vh;
+}
+.home-container {
+  flex-direction: column;
+}
+.home-container-header {
+  font-size: 50px;
+  padding: 10px;
+}
+.home-container-text {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 25px;
+}
+@media only screen and (max-width: 400px) {
+  .home {
+    color: orange;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .home {
+    color: purple;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .home {
+    color: white;
+  }
+}
+
+.home, .home-container {
+  display: flex;
+  align-items: center; /* y ekseninde hizalama */
+  justify-content: center; /* x ekseninde hizalama */
+}
+
+/* responsive design *//*# sourceMappingURL=style.css.map */
